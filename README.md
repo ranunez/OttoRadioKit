@@ -53,7 +53,7 @@ APIHandler.retrieveNews(type: .relevance, query: "government", count: nil) { (ne
 }
 ```
 
-### Retrieve [Playlist](https://developers.ottoradio.com/docs/object/playlist/)
+### Retrieve a [Playlist](https://developers.ottoradio.com/docs/object/playlist/)
 
 ##### Playlist
 ```swift
