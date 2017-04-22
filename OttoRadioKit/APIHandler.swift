@@ -24,7 +24,7 @@ public enum APIHandler {
     ///   - length: Playlist length in minutes. Default is 30 minutes.
     ///   - mix: Specifies the mix of news and podcasts.
     ///   - callback: Callback with data when finished
-    public static func retrievePlaylists(query: String?, length: Int?, mix: PlaylistMix?, callback: @escaping ((Playlist?) -> Void)) {
+    public static func retrievePlaylist(query: String?, length: Int?, mix: PlaylistMix?, callback: @escaping ((Playlist?) -> Void)) {
         guard let request = EndPoint.playlist(query: query, length: length, mix: mix).urlRequest else { return }
         URLSession.shared.dataTask(with: request, completionHandler: { (data, _, error) in
             guard let data = data else {

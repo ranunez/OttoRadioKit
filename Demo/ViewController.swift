@@ -29,7 +29,7 @@ internal final class ViewController: UIViewController {
             }
         }
         
-        APIHandler.retrievePlaylists(query: "tech", length: nil, mix: nil) { (playlist) in
+        APIHandler.retrievePlaylist(query: "tech", length: nil, mix: nil) { (playlist) in
             if let playlist = playlist {
                 print("Retrieved \(playlist.title)")
             } else {
