@@ -28,6 +28,14 @@ internal final class ViewController: UIViewController {
                 print("Error retrieving news")
             }
         }
+        
+        APIHandler.retrievePlaylists(query: "tech", length: nil, mix: nil) { (playlist) in
+            if let playlist = playlist {
+                print("Retrieved \(playlist.title)")
+            } else {
+                print("Error retrieving playlist")
+            }
+        }
     }
 }
 

@@ -83,6 +83,7 @@ public struct Story {
     /// Initializes a new `Story` with json
     ///
     /// - Parameter json: json representation of a `Story`
+    /// - Parameter dateFormatter: dateFormatter 'yyyy-MM-dd HH:mm:ss' used to parse time formats
     internal init?(json: [String: AnyObject], dateFormatter: DateFormatter) {
         guard let id = json["id"] as? String else { return nil }
         self.id = id

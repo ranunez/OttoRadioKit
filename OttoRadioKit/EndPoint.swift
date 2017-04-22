@@ -25,7 +25,7 @@ public enum RelevanceRankingType: String {
 
 /// Endpoint API queries
 internal enum EndPoint {
-    case playlist(query: String?, length: Int, mix: PlaylistMix?)
+    case playlist(query: String?, length: Int?, mix: PlaylistMix?)
     case news(type: RelevanceRankingType, query: String?, count: Int?)
     case podcasts(type: RelevanceRankingType, query: String?, count: Int?)
     
@@ -60,7 +60,9 @@ internal enum EndPoint {
         switch self {
         case .playlist(let query, let length, let mix):
             queryItems.append(URLQueryItem(name: "query", value: query))
-            queryItems.append(URLQueryItem(name: "length", value: "\(length)"))
+            if let length = length {
+                queryItems.append(URLQueryItem(name: "length", value: "\(length)"))
+            }
             queryItems.append(URLQueryItem(name: "mix", value: mix?.rawValue))
         case .news(let type, let query, let count):
             queryItems.append(URLQueryItem(name: "type", value: type.rawValue))

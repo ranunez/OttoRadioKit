@@ -18,6 +18,7 @@
 		1455D6E61EAB229E00564FBA /* OttoRadioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1455D6C21EAB21AF00564FBA /* OttoRadioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1455D6EB1EAB356000564FBA /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1455D6EA1EAB356000564FBA /* EndPoint.swift */; };
 		1455D6ED1EABB16C00564FBA /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1455D6EC1EABB16C00564FBA /* APIHandler.swift */; };
+		14D14BF01EABCBB700F8F4C3 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D14BEF1EABCBB700F8F4C3 /* Playlist.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		1455D6E11EAB228B00564FBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1455D6EA1EAB356000564FBA /* EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		1455D6EC1EABB16C00564FBA /* APIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
+		14D14BEF1EABCBB700F8F4C3 /* Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				1455D6C51EAB21AF00564FBA /* OttoRadioKit.h */,
 				1455D6C61EAB21AF00564FBA /* Info.plist */,
 				1455D6CD1EAB21F400564FBA /* Story.swift */,
+				14D14BEF1EABCBB700F8F4C3 /* Playlist.swift */,
 				1455D6EA1EAB356000564FBA /* EndPoint.swift */,
 				1455D6EC1EABB16C00564FBA /* APIHandler.swift */,
 			);
@@ -243,6 +246,7 @@
 				1455D6ED1EABB16C00564FBA /* APIHandler.swift in Sources */,
 				1455D6EB1EAB356000564FBA /* EndPoint.swift in Sources */,
 				1455D6CE1EAB21F400564FBA /* Story.swift in Sources */,
+				14D14BF01EABCBB700F8F4C3 /* Playlist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +478,7 @@
 				1455D6CC1EAB21AF00564FBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1455D6E21EAB228B00564FBA /* Build configuration list for PBXNativeTarget "Demo" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +487,7 @@
 				1455D6E41EAB228B00564FBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
