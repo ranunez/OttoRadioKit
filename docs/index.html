@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html"> Docs</a> (43% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html"> Reference</a>
+        <img id="carat" src="img/carat.png" />
+          Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/APIHandler.html">APIHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/PlaylistMix.html">PlaylistMix</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/RelevanceRankingType.html">RelevanceRankingType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/Playlist.html">Playlist</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Story.html">Story</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Story/Type.html">– Type</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Story/Category.html">– Category</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <a href='#ottoradiokit' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='ottoradiokit'>OttoRadioKit</h1>
+
+<p><a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible"></a></p>
+
+<p>Swift framework to communicate with the OttoRadio public API <a href="https://developers.ottoradio.com">https://developers.ottoradio.com</a></p>
+<a href='#requirements' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='requirements'>Requirements</h2>
+
+<ul>
+<li>iOS 10.0+</li>
+</ul>
+<a href='#carthage-installation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='carthage-installation'>Carthage Installation</h2>
+
+<p>To install it, simply add the following line to your <strong>Cartfile</strong>:</p>
+<pre class="highlight plaintext"><code>github "ranunez/OttoRadioKit"
+</code></pre>
+
+<p>Run <code>carthage update</code> to build the framework and drag the built <code>OttoRadioKit.framework</code> into your Xcode project.</p>
+<a href='#usage' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='usage'>Usage</h2>
+<a href='#import-framework' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='import-framework'>Import Framework</h3>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">OttoRadioKit</span>
+</code></pre>
+<a href='#retrieve-a-href-https-developers-ottoradio-com-docs-object-story-stories-a' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='retrieve-a-href-https-developers-ottoradio-com-docs-object-story-stories-a'>Retrieve <a href="https://developers.ottoradio.com/docs/object/story/">Stories</a></h3>
+<a href='#podcasts' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h5 id='podcasts'>Podcasts</h5>
+<pre class="highlight swift"><code><span class="kt">APIHandler</span><span class="o">.</span><span class="nf">retrievePodcasts</span><span class="p">(</span><span class="nv">type</span><span class="p">:</span> <span class="o">.</span><span class="n">trending</span><span class="p">,</span> <span class="nv">query</span><span class="p">:</span> <span class="s">"apple"</span><span class="p">,</span> <span class="nv">count</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span> <span class="p">{</span> <span class="p">(</span><span class="n">podcasts</span><span class="p">)</span> <span class="k">in</span>
+    <span class="k">if</span> <span class="k">let</span> <span class="nv">podcasts</span> <span class="o">=</span> <span class="n">podcasts</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"Retrieved </span><span class="se">\(</span><span class="n">podcasts</span><span class="o">.</span><span class="n">count</span><span class="se">)</span><span class="s"> podcasts"</span><span class="p">)</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"Error retrieving podcasts"</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<a href='#news' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h5 id='news'>News</h5>
+<pre class="highlight swift"><code><span class="kt">APIHandler</span><span class="o">.</span><span class="nf">retrieveNews</span><span class="p">(</span><span class="nv">type</span><span class="p">:</span> <span class="o">.</span><span class="n">relevance</span><span class="p">,</span> <span class="nv">query</span><span class="p">:</span> <span class="s">"government"</span><span class="p">,</span> <span class="nv">count</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span> <span class="p">{</span> <span class="p">(</span><span class="n">news</span><span class="p">)</span> <span class="k">in</span>
+    <span class="k">if</span> <span class="k">let</span> <span class="nv">news</span> <span class="o">=</span> <span class="n">news</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"Retrieved </span><span class="se">\(</span><span class="n">news</span><span class="o">.</span><span class="n">count</span><span class="se">)</span><span class="s"> news"</span><span class="p">)</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"Error retrieving news"</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<a href='#playlists' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h5 id='playlists'>Playlists</h5>
+<pre class="highlight swift"><code><span class="kt">APIHandler</span><span class="o">.</span><span class="nf">retrievePlaylists</span><span class="p">(</span><span class="nv">query</span><span class="p">:</span> <span class="s">"tech"</span><span class="p">,</span> <span class="nv">length</span><span class="p">:</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">mix</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span> <span class="p">{</span> <span class="p">(</span><span class="n">playlist</span><span class="p">)</span> <span class="k">in</span>
+    <span class="k">if</span> <span class="k">let</span> <span class="nv">playlist</span> <span class="o">=</span> <span class="n">playlist</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"Retrieved </span><span class="se">\(</span><span class="n">playlist</span><span class="o">.</span><span class="n">title</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"Error retrieving playlist"</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-04-22)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.5</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

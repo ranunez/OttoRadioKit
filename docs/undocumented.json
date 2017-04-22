@@ -1,0 +1,222 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/rnunez/www/mytrus/OttoRadioKit/OttoRadioKit/EndPoint.swift",
+      "line": 13,
+      "symbol": "PlaylistMix.NiceMix",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rnunez/www/mytrus/OttoRadioKit/OttoRadioKit/EndPoint.swift",
+      "line": 14,
+      "symbol": "PlaylistMix.ExtraNews",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rnunez/www/mytrus/OttoRadioKit/OttoRadioKit/EndPoint.swift",
+      "line": 15,
+      "symbol": "PlaylistMix.JustNews",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rnunez/www/mytrus/OttoRadioKit/OttoRadioKit/EndPoint.swift",
+      "line": 16,
+      "symbol": "PlaylistMix.JustPodcasts",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rnunez/www/mytrus/OttoRadioKit/OttoRadioKit/EndPoint.swift",
+      "line": 21,
+      "symbol": "RelevanceRankingType.trending",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rnunez/www/mytrus/OttoRadioKit/OttoRadioKit/EndPoint.swift",
+      "line": 22,
+      "symbol": "RelevanceRankingType.recent",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rnunez/www/mytrus/OttoRadioKit/OttoRadioKit/EndPoint.swift",
+      "line": 23,
+      "symbol": "RelevanceRankingType.relevance",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rnunez/www/mytrus/OttoRadioKit/OttoRadioKit/Story.swift",
+      "line": 16,
+      "symbol": "Story.Type.podcast",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rnunez/www/mytrus/OttoRadioKit/OttoRadioKit/Story.swift",
+      "line": 17,
+      "symbol": "Story.Type.news",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rnunez/www/mytrus/OttoRadioKit/OttoRadioKit/Story.swift",
+      "line": 22,
+      "symbol": "Story.Category.arts",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rnunez/www/mytrus/OttoRadioKit/OttoRadioKit/Story.swift",
+      "line": 23,
+      "symbol": "Story.Category.books",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rnunez/www/mytrus/OttoRadioKit/OttoRadioKit/Story.swift",
+      "line": 24,
+      "symbol": "Story.Category.business",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rnunez/www/mytrus/OttoRadioKit/OttoRadioKit/Story.swift",
+      "line": 25,
+      "symbol": "Story.Category.cars",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rnunez/www/mytrus/OttoRadioKit/OttoRadioKit/Story.swift",
+      "line": 26,
+      "symbol": "Story.Category.comedy",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rnunez/www/mytrus/OttoRadioKit/OttoRadioKit/Story.swift",
+      "line": 27,
+      "symbol": "Story.Category.culture",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rnunez/www/mytrus/OttoRadioKit/OttoRadioKit/Story.swift",
+      "line": 28,
+      "symbol": "Story.Category.education",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rnunez/www/mytrus/OttoRadioKit/OttoRadioKit/Story.swift",
+      "line": 29,
+      "symbol": "Story.Category.entertainment",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rnunez/www/mytrus/OttoRadioKit/OttoRadioKit/Story.swift",
+      "line": 30,
+      "symbol": "Story.Category.fashion",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rnunez/www/mytrus/OttoRadioKit/OttoRadioKit/Story.swift",
+      "line": 31,
+      "symbol": "Story.Category.fitness",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rnunez/www/mytrus/OttoRadioKit/OttoRadioKit/Story.swift",
+      "line": 32,
+      "symbol": "Story.Category.food",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rnunez/www/mytrus/OttoRadioKit/OttoRadioKit/Story.swift",
+      "line": 33,
+      "symbol": "Story.Category.healthcare",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rnunez/www/mytrus/OttoRadioKit/OttoRadioKit/Story.swift",
+      "line": 34,
+      "symbol": "Story.Category.lifestyle",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rnunez/www/mytrus/OttoRadioKit/OttoRadioKit/Story.swift",
+      "line": 35,
+      "symbol": "Story.Category.movies",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rnunez/www/mytrus/OttoRadioKit/OttoRadioKit/Story.swift",
+      "line": 36,
+      "symbol": "Story.Category.music",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rnunez/www/mytrus/OttoRadioKit/OttoRadioKit/Story.swift",
+      "line": 37,
+      "symbol": "Story.Category.politics",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rnunez/www/mytrus/OttoRadioKit/OttoRadioKit/Story.swift",
+      "line": 38,
+      "symbol": "Story.Category.science",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rnunez/www/mytrus/OttoRadioKit/OttoRadioKit/Story.swift",
+      "line": 39,
+      "symbol": "Story.Category.sports",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rnunez/www/mytrus/OttoRadioKit/OttoRadioKit/Story.swift",
+      "line": 40,
+      "symbol": "Story.Category.technology",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rnunez/www/mytrus/OttoRadioKit/OttoRadioKit/Story.swift",
+      "line": 41,
+      "symbol": "Story.Category.travel",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rnunez/www/mytrus/OttoRadioKit/OttoRadioKit/Story.swift",
+      "line": 42,
+      "symbol": "Story.Category.us",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rnunez/www/mytrus/OttoRadioKit/OttoRadioKit/Story.swift",
+      "line": 43,
+      "symbol": "Story.Category.world",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/rnunez/www/mytrus/OttoRadioKit"
+}

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>APIHandler Enum Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Enum/APIHandler" class="dashAnchor"></a>
+    <a title="APIHandler Enum Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (43% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        APIHandler Enum Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/APIHandler.html">APIHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlaylistMix.html">PlaylistMix</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RelevanceRankingType.html">RelevanceRankingType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Playlist.html">Playlist</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Story.html">Story</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Story/Type.html">– Type</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Story/Category.html">– Category</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>APIHandler</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">APIHandler</span></code></pre>
+
+                </div>
+              </div>
+            <p>Retieves data from OttoRadio API</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFO12OttoRadioKit10APIHandler16retrievePlaylistFT5queryGSqSS_6lengthGSqSi_3mixGSqOS_11PlaylistMix_8callbackFGSqVS_8Playlist_T__T_"></a>
+                    <a name="//apple_ref/swift/Method/retrievePlaylist(query:length:mix:callback:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFO12OttoRadioKit10APIHandler16retrievePlaylistFT5queryGSqSS_6lengthGSqSi_3mixGSqOS_11PlaylistMix_8callbackFGSqVS_8Playlist_T__T_">retrievePlaylist(query:length:mix:callback:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>With no required parameters, this service is designed to 
+provide timely and relevant stories with as little effort as possible. 
+Add desired length for a more fine-tuned playlist.</p>
+
+<p>Build a theme playlist: Append a search query to create a playlist 
+tailored around a central theme. There is no limit to the theme. 
+It can be a topic, a concept, or an entity. To enhance the experience, 
+we make additional efforts to optimize the content around highly-demanded themes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">retrievePlaylist</span><span class="p">(</span><span class="nv">query</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">length</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?,</span> <span class="nv">mix</span><span class="p">:</span> <span class="kt"><a href="../Enums/PlaylistMix.html">PlaylistMix</a></span><span class="p">?,</span> <span class="nv">callback</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt"><a href="../Structs/Playlist.html">Playlist</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">))</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>query</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Search query used to generate a themed playlist. e.g., self-driving car, virtual reality</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>length</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Playlist length in minutes. Default is 30 minutes.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>mix</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Specifies the mix of news and podcasts.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>callback</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Callback with data when finished</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFO12OttoRadioKit10APIHandler16retrievePodcastsFT4typeOS_20RelevanceRankingType5queryGSqSS_5countGSqSi_8callbackFGSqGSaVS_5Story__T__T_"></a>
+                    <a name="//apple_ref/swift/Method/retrievePodcasts(type:query:count:callback:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFO12OttoRadioKit10APIHandler16retrievePodcastsFT4typeOS_20RelevanceRankingType5queryGSqSS_5countGSqSi_8callbackFGSqGSaVS_5Story__T__T_">retrievePodcasts(type:query:count:callback:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Provides a list of relevant podcast episodes. 
+This flexible service allows for the retrieval of
+recent podcasts, trending podcasts, and themed podcasts.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">retrievePodcasts</span><span class="p">(</span><span class="nv">type</span><span class="p">:</span> <span class="kt"><a href="../Enums/RelevanceRankingType.html">RelevanceRankingType</a></span><span class="p">,</span> <span class="nv">query</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">count</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?,</span> <span class="nv">callback</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(([</span><span class="kt"><a href="../Structs/Story.html">Story</a></span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">))</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Type determines the relevance ranking.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>query</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Search query used to retrieve podcast episodes.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>count</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Number of stories desired. Default 5 stories, maximum value is 50.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>callback</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Callback with data when finished</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFO12OttoRadioKit10APIHandler12retrieveNewsFT4typeOS_20RelevanceRankingType5queryGSqSS_5countGSqSi_8callbackFGSqGSaVS_5Story__T__T_"></a>
+                    <a name="//apple_ref/swift/Method/retrieveNews(type:query:count:callback:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFO12OttoRadioKit10APIHandler12retrieveNewsFT4typeOS_20RelevanceRankingType5queryGSqSS_5countGSqSi_8callbackFGSqGSaVS_5Story__T__T_">retrieveNews(type:query:count:callback:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Provides a list of relevant news stories. 
+This flexible service allows for the retrieval of 
+recent news, trending news, and themed news.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">retrieveNews</span><span class="p">(</span><span class="nv">type</span><span class="p">:</span> <span class="kt"><a href="../Enums/RelevanceRankingType.html">RelevanceRankingType</a></span><span class="p">,</span> <span class="nv">query</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">count</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?,</span> <span class="nv">callback</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(([</span><span class="kt"><a href="../Structs/Story.html">Story</a></span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">))</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Type determines the relevance ranking.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>query</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Search query used to retrieve news stories.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>count</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Number of stories desired. Default 5 stories, maximum value is 50.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>callback</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Callback with data when finished</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-04-22)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.5</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
