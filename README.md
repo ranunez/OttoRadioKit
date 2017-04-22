@@ -31,7 +31,6 @@ import OttoRadioKit
 
 ### Retrieve [Stories](https://developers.ottoradio.com/docs/object/story/)
 
-
 ##### Podcasts
 ```swift
 APIHandler.retrievePodcasts(type: .trending, query: "apple", count: nil) { (podcasts) in
@@ -54,9 +53,11 @@ APIHandler.retrieveNews(type: .relevance, query: "government", count: nil) { (ne
 }
 ```
 
-##### Playlists
+### Retrieve [Playlist](https://developers.ottoradio.com/docs/object/playlist/)
+
+##### Playlist
 ```swift
-APIHandler.retrievePlaylists(query: "tech", length: nil, mix: nil) { (playlist) in
+APIHandler.retrievePlaylist(query: "tech", length: nil, mix: nil) { (playlist) in
     if let playlist = playlist {
         print("Retrieved \(playlist.title)")
     } else {
