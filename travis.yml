@@ -1,0 +1,28 @@
+language: objective-c
+xcode_project: OttoRadioKit.xcodeproj
+xcode_scheme: OttoRadioKit
+xcode_sdk: iphonesimulator10.3
+osx_image: xcode8.3
+script:
+  - xcodebuild CODE_SIGNING_REQUIRED=NO
+env:
+  global:
+  - FRAMEWORK_NAME=OttoRadioKit
+before_install:
+- brew update
+- brew outdated carthage || brew upgrade carthage
+before_deploy:
+- carthage build --no-skip-current
+- carthage archive $FRAMEWORK_NAME
+deploy:
+  provider:
+    releases
+  api_key:
+    secure: JN0juhIbTv1MDBl/A+WdzqK2n3gfj2Ee/gnVJR2ZGR2oBHqpgKL4b8Lp+LYFRg8ubJum5PKfF4LdcKgssVj+VoRDkwdXHizeUMrV/e1KY636xDghKeC9FP9sn81yNP5VfLnMSWrYIsXf3O0slgXBEuYeLlsgIBlZAnxC/4e8Fgb8TN77n1Wst2fleY9/Lq97kzcYpc3QI3VK94X8Tq3gbs4duWEWW3AvZkCp655a3u1S7VGLdtwpIn8SG3t7k32T+KbrExGzQ7FGi6yf0UYAwZ0sv/rfowJnegaTZ51u93rpa+YAR23OmvjMsxu873sBb7Bpwkr1N5t+pJVejFp6gLYKr+3zSjpkwsiy2tlk63m2Zc0MUc/gunLX/01pN7CyAqqS9a911FkRQzwbiyYvAto9dnZv3bL6uIfEfAwTBZZFfjfrA56EIQ4Ln4mOIYtB15tyghrQ9MXp1AxHF+zK1xJbv4AbPDUnEHNtJ9ch8096XXho3HyrSZZTmCy6Wl2dCiuFMDE2gsRL7CPrc202lZi5l2vGxMMCQjb7PhrVpF6ARrsfQxeT03xia4DZaQYjGkzERxch3mYQwuSYKoZJpHsEmyytxeEEVxIB5tULkXT3dbf26VocMSteooYM4DiF8ZFoCpxiflM6p13ezjt5CBx/aydl3b79WUM8uM13BLE=
+  file:
+    $FRAMEWORK_NAME.framework.zip
+  skip_cleanup:
+      true
+  on:
+    repo: ranunez/OttoRadioKit
+    tags: true
